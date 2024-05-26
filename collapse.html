@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+
+    <div class="es-btn-collapse-container">
+        <button class="es-btn-collapse " onclick="toggleCollapse()">
+            Toggle Collapse
+        </button>
+    </div>
+    <div id="es-collapse" class="es-collapse-content">
+        <p>This is collapsible content.</p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

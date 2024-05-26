@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            background-color: azure;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+
+
+    <div class="es-btn-container">
+   <button type="button" class="es-btn1">Button1</button>
+   <button type="button" class="es-btn2">Button2</button>
+   <button type="button" class="es-btn3">Button3</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

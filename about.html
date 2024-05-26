@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Turkish-Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    /* ===RAINBOW ===== */
+   
+        
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .center ul{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 400px;
+            height: 240px;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+        }
+        .center ul li{
+            list-style: none;
+            border-radius: 50%;
+            border: 15px solid ;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border-bottom-color:transparent !important ;
+            border-left-color:transparent !important ;
+            box-shadow: 0 0 10px;
+            animation: animate 5s infinite alternate;
+            transform: translate(-50%,-50%);
+
+        }
+        .center ul li:nth-child(1){
+            width: 60px;
+            height: 60px;
+            border-color:#FF0000;
+            animation-delay: .2s ;
+        }
+        .center ul li:nth-child(2){
+            width: 90px;
+            height: 90px;
+            border-color:#FF7F00;
+            
+            animation-delay: .4s ;
+        }
+        .center ul li:nth-child(3){
+            width: 120px;
+            height: 120px;
+            border-color:#FFFF00;
+            animation-delay: .6s ;
+            
+        }
+        .center ul li:nth-child(4){
+            width: 150px;
+            height: 150px;
+            border-color:#00FF00;
+            animation-delay: .8s ;
+            
+        } 
+        .center ul li:nth-child(5){
+            width: 180px;
+            height: 180px;
+            border-color:#0000FF;
+            animation-delay:1s ;
+            
+        } 
+        .center ul li:nth-child(6){
+            width: 210px;
+            height: 210px;
+            border-color:#4B0082;
+            
+            animation-delay:1.2s ;
+        } 
+        .center ul li:nth-child(7){
+            width: 240px;
+            height: 240px;
+            border-color:#9400D3;
+            animation-delay:1.4s ;
+            
+        }
+        @keyframes animate {
+            0%{
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+            100%{
+                transform: translate(-50%,-50%) rotate(315deg);
+            }
+
+        }
+   
+
+
+
+    body{
+        background-color: aliceblue;
+    }
+    header{
+        margin-top: 100px;
+        text-align: center;
+
+    }
+    header p{
+        margin-top: 5px;
+    }
+    main{
+
+        padding-left: 10px;
+    }
+    section p{
+        font-size: 20px;
+        margin: 10px 30px;
+        
+    }
+    section h2{
+        margin: 10px 0px 10px ;
+
+    }
+    section ol ,ul {
+        margin-left: 45px;
+        font-size: 17px;
+    }
+    footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(5, 123, 197);
+    height: 100px;
+    padding-top: 30px;
+    box-shadow: 0 2px 4px 3px;
+    }
+    footer p{
+        text-align: center;
+        color: aliceblue;
+    }
+    </style>
+    
+
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+            
+
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    <div class="center">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+
+    <header>
+        <h1> * EasyStyle Proje Teklifi *</h1>
+        <p>English page : <a href="about-en.html" target="_blank" >Click Here</a></p>
+    </header>
+
+    <main>
+        <section>
+            <h2> ~ Proje Adı: EasyStyle</h2>
+            <p><strong>Amacı:</strong> EasyStyle, geliştiricilere hızlı, esnek ve modern bir CSS framework sunmayı amaçlamaktadır. Belirli bileşenler ve anlaşılır sınıf isimleri ile EasyStyle, duyarlı ve estetik açıdan hoş web arayüzleri oluşturmayı kolaylaştırarak web geliştirme deneyimini iyileştirir.</p>
+        </section>
+        <section>
+            <h2> ~ Framework Bileşenleri: <a href="index.html">Click Here</a></h2>
+            <ol>
+        <li>Accordions</li>
+        <li>Forms</li>
+        <li>Navbars</li>
+        <li>Cards</li>
+        <li>Buttons</li>
+        <li>Alerts</li>
+        <li>Dropdowns </li>
+        <li>Modals</li>
+        <li>Carousels</li>
+        <li>Collapse</li>
+        <li>Spinners (Yükleme İkonları)</li>
+        <li>Progress Bars</li>
+        <li>Tabs</li>
+        <li>Pagination</li>
+        <li>Jumbotron (Büyük Başlık ve İçerik Alanı)</li>
+    </ol>
+        </section>
+
+        <section>
+            <h2> ~ Grid Sistemi:</h2>
+            <p>Framework, modern web tasarımında yaygın olarak kabul edilen 12 kolonlu bir grid sistemi kullanacaktır. Bu sistem, geliştiricilerin karmaşık düzenleri kolayca oluşturmasını sağlar. İşte grid sisteminin nasıl çalıştığına dair bir örnek: <a href="grid.html" target="_blank">Click Here</a>
+            </p>
+        </section>
+        <section>
+            <h2> ~ Sınıf İsimlendirme Kuralları:</h2>
+            <p>Framework'ün kullanımı ve anlaşılması kolay olmasını sağlamak için basit ve tutarlı bir sınıf isimlendirme kuralı benimsenecektir. Tüm sınıflar, başka frameworkler veya özel stillerle çakışmayı önlemek için es- (EasyStyle'ın kısaltması) öneki ile başlayacaktır. <br>
+                Örnek sınıf isimleri:
+                <ul>
+                    <li> es-btn</li>
+                    <li> es-form</li>
+                    <li>es-navbar</li>
+                    <li>es-card .....</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>~ Proje Teklifi Detayları:</h2>
+            <p>EasyStyle, Bootstrap'in dokümantasyon sitesine benzer kapsamlı bir dokümantasyon web sitesi sunacaktır. Bu site, framework'te mevcut olan tüm bileşenleri, grid sistemini ve yardımcı sınıfları sergileyecektir. Her bileşen, örnekler, kullanım talimatları ve özelleştirme seçenekleri ile birlikte özel bir sayfaya sahip olacaktır.
+
+            </p>
+        </section>
+        <section>
+            <h2>~ Uygulama Planı:</h2>
+            <ol>
+                <li>Navbar Bileşeni:
+                    <p>Navbar bileşeni, navigasyon bağlantıları içeren sabit bir başlık içerecektir. İşte bir arama çubuğu ve bir "Hakkında" bağlantısı içeren basit bir navbar kodu. <a href="navbars.html">Click Here</a></p>
+                </li>
+                <li>Tüm Sayfalarda Navbar'ı Dahil Etmek İçin JavaScript:
+                    <p>Navbar'ı tüm bileşen sayfalarına dahil etmek için aşağıdaki JavaScript kodunu kullanılabilir: <a href="navbars.html" target="_blank" >Click Here</a>
+                        
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>~ Sonuç : </h2>
+            <p>EasyStyle, belirli bileşenler, esnek bir grid sistemi ve anlaşılır sınıf isimleri ile web geliştirmeyi kolaylaştırmayı amaçlamaktadır. Bootstrap gibi kapsamlı bir dokümantasyon web sitesi oluşturarak, EasyStyle'ın öğrenilmesi ve kullanılması kolay olacak, hem yeni başlayan hem de deneyimli geliştiriciler için mükemmel bir seçenek olacaktır. Sabit bir navbar gibi dinamik bileşenlerin eklenmesi, farklı web sayfaları arasında tutarlılık ve bakım kolaylığı sağlar.</p>
+        </section>
+        
+    </main>
+    <hr>
+    <header style="margin-top: 10px;">
+        <h1> * JavaScript Kütüphanesi Projesi Proposal *</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> ~ Proje Adı: QuickJS</h2>
+            <ol>
+                <li>Fonksiyonlar: 
+                    <ol>
+                        <li>Form Validasyonu:<a href="forms.html" target="_blank">Click Here</a>
+                            <ul>
+                                <li>Kullanıcıdan girdi alanları kontrol edilir.</li>
+                                <li>Boş alanları ve geçersiz verileri tespit eder.</li>
+                                <li>Hata mesajları gösterir.</li>
+                            </ul>
+                        </li>
+                        <li>Tema Değiştirme: <a href="darkMode.html" target="_blank">Click Here</a>
+                            <ul>
+                                <li>Kullanıcı tarafından seçilen tema (karanlık/aydınlık) uygulanır.</li>
+                                <li>Sayfa yeniden yüklenmeden tema değişimi sağlanır.</li>
+                            </ul>
+                        </li>
+                        <li>Açılır Menü:
+                            <ul>
+                                <li>Kullanıcı tarafından tetiklenen bir menü oluşturur.
+                                </li>
+                                <li>Animasyonlarla açılır/kapanır.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>Algoritma Diyagramları:
+                    <p>[Fonksiyonların algoritma diyagramları eklenecek]</p>
+                </li>
+                <li> Class İsimleri ve Kullanım:
+                    <ul>
+                        <li>`.qs-form-validation`: Form validasyonu için</li>
+                        <li>`.qs-theme-toggle`: Tema değiştirme için</li>
+                        <li>`.qs-dropdown-menu`: Açılır menü için
+                        </li>
+                    </ul>
+                </li>
+                
+            </ol>
+        </section>
+
+        <section>
+            <h2>~ Sonuç : </h2>
+            <p>QuickJS, modern web geliştirmenin ihtiyaç duyduğu temel işlevleri sağlamak üzere tasarlanmış hafif bir JavaScript kütüphanesidir. Form validasyonu, tema değiştirme ve açılır menü gibi işlevlerle birlikte, geliştiricilere kolayca entegre edilebilir.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> <span><i class="fa-solid fa-heart-circle-bolt"></i></span> <strong>Made with love by Mbene Syll <span><i class="fa-solid fa-heart-circle-bolt"></i></span> </strong> </p> 
+        <p>26 /june / 2024</p>
+    </footer>
+
+
+</body>
+</html>

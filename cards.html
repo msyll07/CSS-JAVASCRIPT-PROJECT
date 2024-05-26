@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+body{
+    background-color: #c3bfbf;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+     <div class="es-card-container">
+        <div class="es-card">
+            <div class="es-image">
+                <img src="img/image1.png" width="100%" alt="nature">
+            </div>
+            <div class="es-card-content">
+                <h3>Card1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consequuntur.</p>
+                <a href="" class="es-button">Read more</a>
+            </div>
+        </div>
+
+        <div class="es-card">
+            <div class="es-image">
+                <img src="img/image2.png" width="100%" alt="nature">
+            </div>            <div class="es-card-content">
+                <h3>Card2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consequuntur.</p>
+                <a href="" class="es-button">Read more</a>
+            </div>
+        </div>
+
+        <div class="es-card">
+            <div class="es-image">
+                <img src="img/image3.png" width="100%" alt="nature">
+            </div>            
+            <div class="es-card-content">
+                <h3>Card3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consequuntur.</p>
+                <a href="" class="es-button">Read more</a>
+            </div>
+        </div>
+     </div>
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

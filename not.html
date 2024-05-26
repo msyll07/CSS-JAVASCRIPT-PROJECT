@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-framework</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .es-container-div h1{
+            text-align: center;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+        li span{
+            color: brown;
+            margin-left: 10px;
+        }
+        .es-container-div{
+            margin-top: 100px;
+            padding-left: 40px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    <div class="es-container-div">
+    <h1>CSS Framework Projesi Proposal</h1>
+    <h2>Proje Adı: EasyStyle</h2>
+    <h3 style="margin: 10px 0px;" > * Popüler CSS Framework'lerin İncelenmesi:</h3>
+    <ol>
+        <li> <mark>Bootstrap:</mark>
+            <ul>
+                <li> <span> Avantajlar:</span> 
+                    <ul>
+                        <li>Güçlü belgelerle desteklenir.</li>
+                        <li>Büyük bir topluluğa sahiptir.</li>
+                    </ul>
+                </li>
+                <li> <span> Dezavantajlar:</span>
+                    <ul>
+                        <li>Özelleştirme konusunda kısıtlıdır.</li>
+                        <li>Dosya boyutu büyük olabilir.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li> <mark>Tailwind CSS:</mark>
+            <ul>
+                <li> <span>Avantajlar: </span> 
+                    <ul>
+                        <li>Tamamen özelleştirilebilir.</li>
+                        <li>Daha az dosya boyutu.</li>
+                    </ul>
+                </li>
+                <li> <span>Dezavantajlar:</span> 
+                    <ul>
+                        <li>Öğrenme eğrisi dik olabilir.</li>
+                        <li>Bazı geliştiriciler için tercih edilir.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li> <mark>Bulma (Bulma CSS):</mark> 
+            <ul>
+                <li> <span>Avantajlar: </span> 
+                    <ul>
+                        <li>Basit ve sezgisel kullanım.</li>
+                        <li>İyi belgelenmiş.</li>
+                    </ul>
+                </li>
+                <li> <span>Dezavantajlar:</span> 
+                    <ul>
+                        <li>Özelleştirme yetenekleri sınırlı.</li>
+                        <li>Gelişmiş kullanıcılar için yetersiz.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+
+        <li> <mark>Foundation:</mark>
+            <ul>
+                <li> <span>Avantajlar:</span> 
+                    <ul>
+                        <li>Güçlü ve esnek.</li>
+                        <li>Büyük bir topluluk ve destek.</li>
+                    </ul>
+                </li>
+                <li> <span>Dezavantajlar:</span> 
+                    <ul>
+                        <li>Öğrenme eğrisi dik olabilir.</li>
+                        <li>Özelleştirme karmaşıklığı.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li> <mark>Semantic UI:</mark>
+            <ul>
+                <li> <span>Avantajlar:</span> 
+                    <ul>
+                        <li>Doğal dil kullanımı.</li>
+                        <li>Kolay özelleştirme.</li>
+                    </ul>
+                </li>
+                <li> <span>Dezavantajlar:</span> 
+                    <ul>
+                        <li>Performans sorunları olabilir.</li>
+                        <li>Belirli durumlarda karmaşık hale gelebilir.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>* Framework Components:</h3>
+    <ol>
+        <li>Accordions</li>
+        <li>Forms</li>
+        <li>Navbars</li>
+        <li>Cards</li>
+        <li>Buttons</li>
+        <li>Alerts</li>
+        <li>Dropdowns </li>
+        <li>Modals</li>
+        <li>Carousels</li>
+        <li>Collapse</li>
+        <li>Spinners (Yükleme İkonları)</li>
+        <li>Progress Bars</li>
+        <li>Tabs</li>
+        <li>Pagination</li>
+        <li>Jumbotron (Büyük Başlık ve İçerik Alanı)</li>
+    </ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- =======font awsome cdn===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =======font awsome cdn==== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        
+          
+    </style>
+
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+    <div class="es-form-container">
+        <div class="es-form">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <div style="display: flex; gap: 10px;">
+                    <div>
+                        <input class="es-first-name" id="firstName" type="text" placeholder="First Name">
+                        <span class="error" id="firstNameError">First Name is required.</span>
+                    </div>
+                    <div>
+                        <input class="es-last-name" id="lastName" type="text" placeholder="Last Name">
+                        <span class="error" id="lastNameError">Last Name is required.</span>
+                    </div>
+                </div>
+                <div>
+                    <input class="es-email" id="email" type="email" placeholder="Email">
+                    <span class="error" id="emailError">Valid email is required.</span>
+                </div>
+                <div>
+                    <input class="es-password" id="password" type="password" placeholder="Password">
+                    <span class="error" id="passwordError">Password is required.</span>
+                </div>
+                <div>
+                    <input class="es-password" id="confirmPassword" type="password" placeholder="Confirm Password">
+                    <span class="error" id="confirmPasswordError">Passwords do not match.</span>
+                </div>
+                <div class="es-agree-text">
+                    <input class="es-checkbox" id="agree" type="checkbox">
+                    <p>I Agree with <span>privacy</span> and <span>policy</span></p>
+                    <span class="error" id="agreeError">You must agree to the terms.</span>
+                </div>
+                <div class="es-sign-up-btn">
+                    <button type="submit">Sign up</button>
+                    
+                </div>
+                <p style="color: gray; text-align: center;"> Click Here to <a style="color: purple;"    href="log-in-page.html " target="_blank">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    
+    <script>
+        
+        function showError(element, message) {
+            const errorElement = document.getElementById(element);
+            errorElement.textContent = message;
+            errorElement.classList.add('active');
+        }
+
+        function hideError(element) {
+            const errorElement = document.getElementById(element);
+            errorElement.classList.remove('active');
+        }
+
+        function validateForm(form) {
+            const firstName = form.querySelector('#firstName').value.trim();
+            const lastName = form.querySelector('#lastName').value.trim();
+            const email = form.querySelector('#email').value.trim();
+            const password = form.querySelector('#password').value.trim();
+            const confirmPassword = form.querySelector('#confirmPassword').value.trim();
+            const agree = form.querySelector('#agree').checked;
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let isValid = true;
+            
+            if (!firstName) {
+                showError('firstNameError', 'First Name is required.');
+                isValid = false;
+            } else {
+                hideError('firstNameError');
+            }
+            
+            if (!lastName) {
+                showError('lastNameError', 'Last Name is required.');
+                isValid = false;
+            } else {
+                hideError('lastNameError');
+            }
+            
+            if (!emailRegex.test(email)) {
+                showError('emailError', 'Valid email is required.');
+                isValid = false;
+            } else {
+                hideError('emailError');
+            }
+            
+            if (!password) {
+                showError('passwordError', 'Password is required.');
+                isValid = false;
+            } else {
+                hideError('passwordError');
+            }
+            
+            if (password !== confirmPassword) {
+                showError('confirmPasswordError', 'Passwords do not match.');
+                isValid = false;
+            } else {
+                hideError('confirmPasswordError');
+            }
+            
+            if (!agree) {
+                showError('agreeError', 'You must agree to the terms.');
+                isValid = false;
+            } else {
+                hideError('agreeError');
+            }
+
+            if (isValid) {
+                // Store user details in localStorage
+                localStorage.setItem('user', JSON.stringify({ firstName, lastName, email, password }));
+                alert('Signup successful! Please log in.');
+            }
+            
+            return isValid;
+
+        }
+        // Attach event listener to the signup form
+        document.querySelector('#signupForm').addEventListener('submit', function(event) {
+            if (!validateForm(this)) {
+                event.preventDefault();
+            }
+        });
+
+    </script>
+    
+                    
+</body>
+</html>

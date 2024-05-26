@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+body{
+    background-color: aliceblue;
+}
+
+.es-grid-container {
+            max-width: 1200px;
+            margin: 150px auto;
+            padding: 0 15px;
+        }
+
+        .es-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            gap: 5px;
+        }
+
+        .es-col {
+            padding: 15px;
+            background-color: lightskyblue;
+            border: 2px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+        }
+
+        .es-col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+        .es-col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+        .es-col-3 { flex: 0 0 25%; max-width: 25%; }
+        .es-col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+        .es-col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+        .es-col-6 { flex: 0 0 50%; max-width: 50%; }
+        .es-col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+        .es-col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+        .es-col-9 { flex: 0 0 75%; max-width: 75%; }
+        .es-col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+        .es-col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+        .es-col-12 { flex: 0 0 100%; max-width: 100%; }
+
+</style>
+
+
+</head>
+<body>
+    
+
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+            
+
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+
+    <div class="es-grid-container">
+        <div class="es-row">
+            <div class="es-col es-col-3">1 (25%)</div>
+            <div class="es-col es-col-3">2 (25%)</div>
+            <div class="es-col es-col-6">3 (50%)</div>
+            <div class="es-col es-col-4">4 (33.33%)</div>
+            <div class="es-col es-col-8">5 (66.66%)</div>
+            <div class="es-col es-col-12">6 (100%)</div>
+        </div>
+    </div>
+</body>
+</html>

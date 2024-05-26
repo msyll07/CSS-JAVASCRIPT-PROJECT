@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-English-Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    /* ===RAINBOW ===== */
+   
+        
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .center ul{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 400px;
+            height: 240px;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+        }
+        .center ul li{
+            list-style: none;
+            border-radius: 50%;
+            border: 15px solid ;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border-bottom-color:transparent !important ;
+            border-left-color:transparent !important ;
+            box-shadow: 0 0 10px;
+            animation: animate 5s infinite alternate;
+            transform: translate(-50%,-50%);
+
+        }
+        .center ul li:nth-child(1){
+            width: 60px;
+            height: 60px;
+            border-color:#FF0000;
+            animation-delay: .2s ;
+        }
+        .center ul li:nth-child(2){
+            width: 90px;
+            height: 90px;
+            border-color:#FF7F00;
+            
+            animation-delay: .4s ;
+        }
+        .center ul li:nth-child(3){
+            width: 120px;
+            height: 120px;
+            border-color:#FFFF00;
+            animation-delay: .6s ;
+            
+        }
+        .center ul li:nth-child(4){
+            width: 150px;
+            height: 150px;
+            border-color:#00FF00;
+            animation-delay: .8s ;
+            
+        } 
+        .center ul li:nth-child(5){
+            width: 180px;
+            height: 180px;
+            border-color:#0000FF;
+            animation-delay:1s ;
+            
+        } 
+        .center ul li:nth-child(6){
+            width: 210px;
+            height: 210px;
+            border-color:#4B0082;
+            
+            animation-delay:1.2s ;
+        } 
+        .center ul li:nth-child(7){
+            width: 240px;
+            height: 240px;
+            border-color:#9400D3;
+            animation-delay:1.4s ;
+            
+        }
+        @keyframes animate {
+            0%{
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+            100%{
+                transform: translate(-50%,-50%) rotate(315deg);
+            }
+
+        }
+   
+
+
+
+    body{
+        background-color: aliceblue;
+    }
+    header{
+        margin-top: 100px;
+        text-align: center;
+
+    }
+    header p{
+        margin-top: 5px;
+    }
+    main{
+
+        padding-left: 10px;
+    }
+    section p{
+        font-size: 20px;
+        margin: 10px 30px;
+        
+    }
+    section h2{
+        margin: 10px 0px 10px ;
+
+    }
+    section ol ,ul {
+        margin-left: 45px;
+        font-size: 17px;
+    }
+    footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(5, 123, 197);
+    height: 100px;
+    padding-top: 30px;
+    box-shadow: 0 2px 4px 3px;
+    }
+    footer p{
+        text-align: center;
+        color: aliceblue;
+    }
+    </style>
+    
+
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+            
+
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    <div class="center">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+    
+
+    <header>
+        <h1> * CSS Framework Project Proposal*</h1>
+        <p>Turkish page : <a href="about.html" target="_blank" >Click Here</a></p>
+
+    </header>
+
+    <main>
+        <section>
+            <h2> ~ Project Name: EasyStyle</h2>
+            <p><strong>Purpose:</strong> EasyStyle aims to provide developers with a fast and flexible CSS framework. With specific components and understandable classes, it offers a quick and modern web development experience.
+            </p>
+        </section>
+        <section>
+            <h2> ~  Framework Components: <a href="index.html">Click Here</a></h2>
+            <p>EasyStyle will include the following components:</p>
+            <ol>
+        <li>Accordions</li>
+        <li>Forms</li>
+        <li>Navbars</li>
+        <li>Cards</li>
+        <li>Buttons</li>
+        <li>Alerts</li>
+        <li>Dropdowns </li>
+        <li>Modals</li>
+        <li>Carousels</li>
+        <li>Collapse</li>
+        <li>Spinners</li>
+        <li>Progress Bars</li>
+        <li>Tabs</li>
+        <li>Pagination</li>
+        <li>Jumbotron </li>
+    </ol>
+        </section>
+
+        <section>
+            <h2> ~ Grid Sistemi:</h2>
+            <p>The framework will utilize a 12-column grid system, which is a widely accepted standard in modern web design. This system allows developers to create complex layouts with ease. Here’s an example of how the grid system works: <a href="grid.html" target="_blank">Click Here</a>
+            </p>
+        </section>
+        <section>
+            <h2> ~ Class Naming Convention:</h2>
+            <p>To ensure that the framework is easy to use and understand, we will adopt a simple and consistent class naming convention. All classes will be prefixed with es- (short for EasyStyle) to avoid conflicts with other frameworks or custom styles. <br>
+                Example class names:
+                <ul>
+                    <li> es-btn</li>
+                    <li> es-form</li>
+                    <li>es-navbar</li>
+                    <li>es-card .....</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>~ Project Proposal Details:</h2>
+            <p>EasyStyle will feature a comprehensive documentation website similar to Bootstrap's documentation site. This site will showcase all the components, grid system, and utility classes available in the framework. Each component will have a dedicated page with examples, usage instructions, and customization options.
+
+            </p>
+        </section>
+        <section>
+            <h2>~ Implementation Plan:</h2>
+            <ol>
+                <li>Navbar Component:
+                    <p>The Navbar component will include a fixed header with navigation links. Here is the code for a simple navbar with a search bar and an "About" link that leads to an explanation page.<a href="navbars.html">Click Here</a></p>
+                </li>
+                <li>JavaScript to Include Navbar in All Pages:
+                    <p>To include the navbar in all component pages, use the following JavaScript:
+                        <a href="navbars.html" target="_blank" >Click Here</a>
+                        
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>~ Conclusion: </h2>
+            <p>EasyStyle aims to simplify web development by providing a robust set of components, a flexible grid system, and intuitive class names. By creating a comprehensive documentation website similar to Bootstrap, EasyStyle will be easy to learn and use, making it an excellent choice for both beginner and experienced developers. The inclusion of dynamic components like a fixed navbar ensures consistency and ease of maintenance across different web pages.
+            </p>
+        </section>
+        
+    </main>
+    <hr>
+    <header style="margin-top: 10px;">
+        <h1> *JavaScript Library Project Proposal *</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> ~ Project Name: QuickJS</h2>
+            <ol>
+                <li> Functions: 
+                    <ol>
+                        <li>Form Validation: <a href="forms.html" target="_blank">Click Here</a>
+                            <ul>
+                                <li>Checks user input fields.</li>
+                                <li>Detects empty fields and invalid data.</li>
+                                <li>Displays error messages.</li>
+                            </ul>
+                        </li>
+                        <li>Theme Switching: <a href="darkMode.html" target="_blank">Click Here</a>
+                            <ul>
+                                <li>Applies the user-selected theme (dark/light).</li>
+                                <li>Enables theme change without page reload.</li>
+                            </ul>
+                        </li>
+                        <li>Dropdown Menu:
+                            <ul>
+                                <li>Creates a menu triggered by the user.</li>
+                                <li>Provides animations for opening/closing.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li> Algorithm Diagrams:
+                    <p>[Algorithm diagrams for functions will be added]</p>
+                </li>
+                <li>Class Names and Usage:
+                    <ul>
+                        <li>`.qs-form-validation`:  For form validation</li>
+                        <li>`.qs-theme-toggle`:  For theme switching</li>
+                        <li>`.qs-dropdown-menu`: For dropdown menu
+                        </li>
+                    </ul>
+                </li>
+                
+            </ol>
+        </section>
+
+        <section>
+            <h2>~ Conclusion : </h2>
+            <p>QuickJS is a lightweight JavaScript library designed to provide essential functionalities for modern web development. Along with functions like form validation, theme switching, and dropdown menus, it can be easily integrated by developers.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> <span><i class="fa-solid fa-heart-circle-bolt"></i></span> <strong>Made with love by Mbene Syll <span><i class="fa-solid fa-heart-circle-bolt"></i></span> </strong> </p> 
+        <p>26 /june / 2024</p>
+    </footer>
+
+</body>
+</html>

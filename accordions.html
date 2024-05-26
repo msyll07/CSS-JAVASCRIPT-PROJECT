@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ===font awsome cdn===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E3F2FD;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+
+
+        <div class="es-accordion">
+            <div class="es-accordion-content">
+                <header>
+                    <span class="es-accordion-title">What do you mean by accordion ?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="descriptions">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus rem excepturi, esse molestias exercitationem labore, fugit nisi ab autem voluptatem atque? Obcaecati incidunt amet fugiat repellendus dolores voluptatum quidem!
+                </p>
+            </div>
+
+
+            <div class="es-accordion-content">
+                <header>
+                    <span class="es-accordion-title">What do you mean by accordion ?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="descriptions">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus rem excepturi, esse molestias exercitationem labore, fugit nisi ab autem voluptatem atque? Obcaecati incidunt amet fugiat repellendus dolores voluptatum quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam voluptates eum, modi consequuntur in optio tenetur eius adipisci suscipit quasi perferendis, ullam rerum ducimus iusto deleniti. Tenetur perferendis magnam consequatur?
+                </p>
+            </div>
+
+            <div class="es-accordion-content">
+                <header>
+                    <span class="es-accordion-title">What do you mean by accordion ?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="descriptions">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus rem excepturi, esse molestias exercitationem labore, fugit nisi ab autem voluptatem atque? Obcaecati incidunt amet fugiat repellendus dolores voluptatum quidem!
+                </p>
+            </div>
+
+            <div class="es-accordion-content">
+                <header>
+                    <span class="es-accordion-title">What do you mean by accordion ?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="descriptions">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus rem excepturi, esse molestias exercitationem labore, fugit nisi ab autem voluptatem atque? Obcaecati incidunt amet fugiat repellendus dolores voluptatum quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ullam autem placeat perferendis quae dolor sit distinctio accusamus consectetur. Suscipit aliquam mollitia numquam ad! Ratione voluptate eaque voluptatem expedita magni, cumque quaerat dolorum in repudiandae fugit ipsum dolores, exercitationem libero, facere voluptates nostrum omnis necessitatibus blanditiis! Facilis molestias, tempore totam aut hic deleniti, rerum impedit molestiae voluptas aliquid obcaecati, eaque dolores corporis asperiores quisquam et atque accusantium similique. Ducimus iure maiores ad tempore et sequi quisquam mollitia maxime, ipsum vitae officia molestiae impedit delectus recusandae voluptatem sunt alias cumque assumenda architecto suscipit aliquid dicta? Esse excepturi libero nostrum est. Dolorum.
+                </p>
+            </div>
+        </div>
+
+
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
