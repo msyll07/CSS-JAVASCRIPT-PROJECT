@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+
+    <script>
+        //jQuery to load navbar.html into the current page
+        $(function(){
+            $(".navbar-placeholder").load("myNavbar.html");
+        });
+    </script>
+    
+    <!-- Placeholder for navbar -->
+    <div class="navbar-placeholder"></div>
+    
+
+
+    <div class="es-progress">
+        <div class="es-progress-bar" style="width: 70%;">70%</div>
+    </div>
+    <div class="es-progress2">
+        <div class="es-progress-bar2" style="width: 50%;">50%</div>
+    </div>
+    <div class="es-progress3">
+        <div class="es-progress-bar3" style="width: 30%;">30%</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
